@@ -16,17 +16,15 @@ class MainPage extends Component {
                     <h1 className='heading-primary'>
                     <span className='heading-primary--main first'> 
                         Kyle
-                    </span>
+                        </span>
                     <span className='middle-int'>W.</span>
                     <span className='heading-primary--main2'>
-                         Clutter 
-                        </span> 
+                         Clutter
+                    </span> 
                         <span className='heading-primary--sub'>Front-end Web Developer</span>
 
-                    
-                    
                     </h1>
-
+                    <a href='#' className='btn btn-white btn-animated'> See My Projects </a>
 
                 </div>
             </div>

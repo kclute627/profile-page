@@ -1,0 +1,104 @@
+
+
+
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.header{
+  height: 95vh;
+ 
+  background-image: linear-gradient(to right bottom,
+    rgba(90, 88, 88, 0.753),
+    rgba(1, 1, 1, 0.644)
+  ), url("../assets/citySkyline5.jpeg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+}
+.header__text-box{
+  
+  position: absolute;
+  
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%)
+}
+.heading-primary{
+  color: #fff;
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main{
+
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  margin-right: 3rem;
+  animation: moveInLeft 3s ease-out;
+  
+
+
+}
+.middle-int{
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-right: 3rem;
+  letter-spacing: 1rem;
+ 
+  animation: appear 3s ease-out;
+
+}
+.middle-int:hover{
+  /* color: rgba(52, 153, 247, 0.781);
+  cursor: pointer; */
+  /* animation: appear2 1s ease-out; */
+}
+.heading-primary--main2{
+
+  display: inline-block;
+  font-size: 6rem;
+  font-weight: 700;
+  
+  letter-spacing: 1rem;
+  animation: moveInRight 3s ease-out;
+ 
+
+
+}
+.heading-primary--sub{
+  display: block;
+  font-weight: 400;
+  letter-spacing: .75rem;
+  animation: appear 1s ease-out 3s;
+  animation-fill-mode: backwards;
+
+}
+
+
+
+
+
+
