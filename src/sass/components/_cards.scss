@@ -1,0 +1,111 @@
+.card{
+    position: relative;
+    height: 52rem;
+    
+    border-radius: 3px;
+    font-size: 2rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+
+    &__picture{
+        
+       
+       &-1{ 
+        background-size: cover;
+        height: 23rem;
+       background-blend-mode: screen;
+       cursor: pointer;       
+       background-position: center;      
+        background-image: 
+        url(./../assets/BurgBuilder.jpg);
+       }
+       &-2{
+        background-size: cover;
+        height: 23rem;
+       background-blend-mode: screen;
+       cursor: pointer;       
+       background-position: center;
+        background-image: 
+        url(./../assets/gitHubBattle.jpg);
+
+       }
+    }
+
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize;
+        color: $color-black;       
+        padding-top: 2rem;
+        padding-bottom: -3rem;
+        
+    }
+
+
+
+
+
+    &__detials{
+        p{
+            margin: 0;
+            text-align: center;
+            
+        }
+       
+
+       
+
+    }
+    &__footer{
+        text-align: center;
+        margin: 0;
+       &-text {
+            margin-top: 2rem;
+            border-bottom: 1px solid $color-black;
+            margin: 0 9rem;
+            
+            padding-top: 1rem 0;
+        }
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            display:block;
+            margin-block-start: 0;
+            padding: 0;
+
+            li {
+
+                text-align: center;
+                font-size: 3rem;
+                padding: 1rem;
+                display: inline-block;
+                position: relative;
+
+               & .fa-react:hover{
+                color: $react-blue;
+               }
+               & .fa-css3-alt:hover{
+                color: $color-css-red;
+               }
+               & .fa-js:hover{
+
+                   color: $color-yellow-javascript;
+                   position: relative;
+                   border-radius: 1%;
+                    height: 60%;
+                    width: 100%;
+                    line-height: -20px;
+
+                
+               }
+               
+            }
+
+        }
+
+    }
+}

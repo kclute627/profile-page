@@ -1,0 +1,66 @@
+
+  .heading{
+    &-primary{
+      color: $color-white;
+      text-transform: capitalize;
+      backface-visibility: hidden;
+      
+      margin-bottom: 6rem;
+  
+      &--main{
+          display: inline-block;
+          font-size: 6rem;
+          font-weight: 700;
+          letter-spacing: 1rem;
+          margin-right: 3rem;
+          animation: moveInLeft 3s ease-out;
+  
+      }
+
+      &--main2{        
+      display: inline-block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 1rem;
+      animation: moveInRight 3s ease-out;
+  
+      }
+      &--sub{
+      display: block;
+      font-weight: 400;
+      letter-spacing: .75rem;
+      animation: appear 1s ease-out 3s;
+      animation-fill-mode: backwards;
+  
+      }
+    }
+
+    &-secondary{
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+        color: $color-black;
+        
+
+        
+
+    }
+  }
+    
+    .middle-int{
+      display: inline-block;
+      font-size: 6rem;
+      font-weight: 700;
+      margin-right: 3rem;
+      letter-spacing: 1rem;
+     
+      animation: appear 3s ease-out;
+    
+    }
+    .middle-int:hover{
+      /* color: rgba(52, 153, 247, 0.781);
+      cursor: pointer; */
+      /* animation: appear2 1s ease-out; */
+    }
+     

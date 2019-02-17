@@ -1,9 +1,23 @@
+@import "abstract/varibials";
+@import "abstract/mixins";
+
+
+
 @import "base/base";
 @import "base/animations";
+@import "base/typeogorphy";
+@import "base/utilities";
 
 
-@import "abstract/varibials";
+
 
 
 @import "components/btn";
+@import "components/header";
+@import "components/cards";
+
+@import "layout/grid";
+
+@import "pages/home";
+
 
