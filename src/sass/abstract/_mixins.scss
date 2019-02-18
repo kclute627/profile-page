@@ -6,3 +6,12 @@
     }
 
 }
+
+@mixin picFormat {
+    background-size: cover;
+    height: 23rem;
+   background-blend-mode: screen;
+   cursor: pointer;       
+   background-position: center;
+
+}

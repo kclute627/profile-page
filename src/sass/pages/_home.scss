@@ -1,5 +1,33 @@
 .section-projects {
     background-color: $color-gray-light-1;
     padding: 14rem 0 15rem 0;
-    margin-top: -7rem;
+    margin-top: -9rem;
+    &--main{
+        position: relative;
+        
+        & .fa-arrow-circle-right{
+            position: absolute;
+            font-size: 6rem;
+            top: 40%;
+            left: 93%;
+
+            &:hover{
+                color: $react-blue;
+
+            }
+        }
+
+        & .fa-arrow-circle-left {
+            position: absolute;
+            font-size: 6rem;
+            top: 40%;
+            right: 93%;
+
+            &:hover{                
+                color: $react-blue;
+    
+                
+            }
+        }
+    }
 }

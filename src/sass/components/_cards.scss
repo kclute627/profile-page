@@ -12,22 +12,20 @@
         
        
        &-1{ 
-        background-size: cover;
-        height: 23rem;
-       background-blend-mode: screen;
-       cursor: pointer;       
-       background-position: center;      
+        @include picFormat;  
         background-image: 
         url(./../assets/BurgBuilder.jpg);
        }
        &-2{
-        background-size: cover;
-        height: 23rem;
-       background-blend-mode: screen;
-       cursor: pointer;       
-       background-position: center;
+        @include picFormat;
         background-image: 
         url(./../assets/gitHubBattle.jpg);
+
+       }
+       &-3{
+        @include picFormat;
+        background-image: 
+        url(./../assets/MemeGen.jpg);
 
        }
     }
