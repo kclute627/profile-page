@@ -42,10 +42,16 @@
         margin-bottom: 5rem;
         color: $color-black;
         
-
-        
+        &-2{
+          color: $color-white;
+          text-transform: capitalize;
+          font-size: 4rem;
+          font-weight: 400;
+          margin-bottom: 5rem;
+        }
 
     }
+    
   }
     
     .middle-int{

@@ -1,0 +1,28 @@
+.section-projects--main{
+    position: relative;
+    
+    & .fa-arrow-circle-right{
+        position: absolute;
+        font-size: 6rem;
+        top: 40%;
+        left: 93%;
+
+        &:hover{
+            color: $color-icon-gray;
+
+        }
+    }
+
+    & .fa-arrow-circle-left {
+        position: absolute;
+        font-size: 6rem;
+        top: 40%;
+        right: 93%;
+
+        &:hover{                
+            color: $color-icon-gray;
+
+            
+        }
+    }
+}
