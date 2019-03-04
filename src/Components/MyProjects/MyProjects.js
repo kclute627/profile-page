@@ -13,7 +13,7 @@ class MyProjects extends Component {
         projectStart: 0,
         pageEnd: 3,
         rightArrow: true,
-        leftArrow: true,
+        leftArrow: false,
         projects: [
             {
                 index: 1,
@@ -127,7 +127,44 @@ class MyProjects extends Component {
             
         ],
         dataLen: null, 
-    }    
+    } 
+    
+    componentDidUpdate(){
+        this.arrCheck();
+    }
+
+
+    arrCheck = ()=> {
+        if(this.state.dataLen === null){
+            this.setState({dataLen: this.state.projects.length})
+        }
+        
+        
+        if(this.state.projectStart <= 0 && this.state.leftArrow){
+            this.setState({
+                leftArrow:false,
+                rightArrow: true,
+                
+            })
+        }
+        if(this.state.projectStart > 0 && !this.state.leftArrow){
+            this.setState({leftArrow: true})
+        }
+        
+        if(this.state.pageEnd === this.state.dataLen && this.state.rightArrow ){
+            this.setState({
+                leftArrow:true,
+                rightArrow: false,
+                
+            })
+        }
+        if(this.state.pageEnd !== this.state.dataLen && !this.state.rightArrow ){
+            this.setState({rightArrow: true})
+        }
+
+    }
+            
+
 
 
     
@@ -161,7 +198,7 @@ class MyProjects extends Component {
     })
 
 }
-
+ 
 
 
     
@@ -170,34 +207,8 @@ class MyProjects extends Component {
     
 
     render(){
-         
-    if(this.state.dataLen === null){
-        this.setState({dataLen: this.state.projects.length})
-    }
     
-    
-    if(this.state.projectStart <= 0 && this.state.leftArrow){
-        this.setState({
-            leftArrow:false,
-            rightArrow: true,
-            
-        })
-    }
-    if(this.state.projectStart !== 0 && !this.state.leftArrow){
-        this.setState({leftArrow: true})
-    }
-
-    if(this.state.pageEnd === this.state.dataLen && this.state.rightArrow ){
-        this.setState({
-            leftArrow:true,
-            rightArrow: false,
-            
-        })
-    }
-    if(this.state.pageEnd !== this.state.dataLen && !this.state.rightArrow ){
-        this.setState({rightArrow: true})
-    }
-   
+        // this.arrCheck()
 
        
 
@@ -217,6 +228,7 @@ class MyProjects extends Component {
                 js={cur.lang3}
                 index={cur.index}
                 key ={cur.index}
+                
     
     
                  />
@@ -229,7 +241,7 @@ class MyProjects extends Component {
             <div className="section-projects">
                 <div className = "section-projects--main">
                 <div className="u-center-text u-margin-bottom-big">
-                    <h2 className='heading-secondary'>
+                    <h2 className='heading-secondary' id="projects">
                         My Projects
                     </h2>
                 </div>
@@ -242,10 +254,10 @@ class MyProjects extends Component {
                 <div className ='row__icon'>
                     <i 
                     className ={this.state.rightArrow ? "fas fa-arrow-circle-right" : null}
-                    onClick = {()=>this.arrUpdateHandlerAddRight()}></i>
+                    onClick = {this.arrUpdateHandlerAddRight} ></i>
                     <i 
                     className={this.state.leftArrow ? "fas fa-arrow-circle-left" : null}
-                    onClick= {()=>this.arrUpdateHandlerAddLeft()}></i>
+                    onClick= {this.arrUpdateHandlerAddLeft}></i>
                 </div>
                 
                 

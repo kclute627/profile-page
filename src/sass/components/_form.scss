@@ -13,6 +13,7 @@
         width: 80%;
         display: block;
         color: inherit;
+        resize: none;
 
         &::-webkit-input-placeholder {
             color: $color-black;
@@ -28,6 +29,7 @@
     }
 
     &:focus:invalid{
+        //will submit with the input not being valid
         border-bottom: 3px solid $color-css-red;
     }
 

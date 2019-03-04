@@ -1,0 +1,122 @@
+.footer{
+    
+    width: 100%;
+    display: block;
+    &-header{
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        margin:0;
+        color: $color-black;
+        border-bottom: 1px solid $color-black;
+    }
+    
+
+    &__background{
+        position: relative;        
+        height: 20rem;
+
+
+    }
+    
+    &__bg-vid{
+              
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        opacity: .2;
+        overflow: hidden;
+
+        &-content{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        
+    }
+    
+
+
+    &__icon-block{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        z-index: 100;
+        display: inline-block;
+
+
+              
+
+        
+    }
+
+    &-icon{
+       
+       
+        font-size: 3.5rem;
+        opacity: 1;
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+
+        &-fb{
+            color: $color-fb;
+            text-decoration: none;
+
+
+            &:hover{
+                color: darken( $color-fb, 15% )
+            }
+
+        }
+        &-fcc{
+            color: $color-fcc;
+            text-decoration: none;
+
+            &:hover{
+                color: darken($color-fcc, 15%);
+                text-decoration: none;
+            }
+        }
+        &-link{
+            color: $color-link;
+            text-decoration: none;
+
+            &:hover{
+                color: darken($color-link, 15%);
+                text-decoration: none;
+            }
+        }
+        &-git{
+            color: $color-git;
+            text-decoration: none;
+
+            &:hover{
+                color: darken($color-git, 15%);
+                text-decoration: none;
+            }
+        }
+        &-email{
+            color: $color-gray-dark-1;
+            text-decoration: none;
+
+            &:hover{
+                color: darken($color-gray-dark-1, 15%);
+                text-decoration: none;
+            }
+        }
+        
+        
+    }
+
+    &--link{
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+}

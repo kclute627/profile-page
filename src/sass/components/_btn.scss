@@ -50,6 +50,44 @@
         animation-fill-mode: backwards;
       
       }
+      &__container-form{
+          display: block;
+          text-align: center;
+
+      }
+
+      &-form{
+          font-size: 1rem;
+          font-family: inherit;
+          width: 16em;
+          height: 4rem;
+          border-radius: 10rem;
+          text-align: center;
+          display: inline-block;
+          outline: none;
+          color: $color-white;
+          box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+          background: rgba(56, 56, 56, 0.75);
+          transition: all .2s ease-out;
+          backface-visibility: none;
+          border: 1px solid black;
+          
+        &:hover{
+            background: rgba(0, 0, 0, 0.75);
+            transform: translateY(-.8rem);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            }
+        &:disabled{
+            cursor: not-allowed;  
+        }
+
+        &:active{
+            transform: translateY(-.3rem);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+        
+          
+      }
 
 
 
