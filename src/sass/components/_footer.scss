@@ -10,6 +10,14 @@
         margin:0;
         color: $color-black;
         border-bottom: 1px solid $color-black;
+
+        &-icons{
+
+            @include respond(phoneSmall){
+
+            }
+
+        }
     }
     
 
@@ -47,6 +55,25 @@
         z-index: 100;
         display: inline-block;
 
+        @include respond(tab-port){
+            top:10%;
+            left: 25%;
+        }
+        @include respond(phone1){
+            left: 10%;
+        }
+
+        
+        @include respond(phoneSmall){
+            left: 9%;
+            
+           
+        
+          }
+        @media(max-width: 26em){
+           
+        }
+
 
               
 
@@ -61,6 +88,14 @@
         cursor: pointer;
         &:not(:last-child){
             margin-right: 3rem;
+            @include respond(phoneSmall){
+               margin-right: 2rem;
+            }
+        }
+
+        @include respond(phoneSmall){
+            font-size: 3.5rem;
+            margin-top: 2.25rem;
         }
 
         &-fb{
@@ -107,6 +142,13 @@
             &:hover{
                 color: darken($color-gray-dark-1, 15%);
                 text-decoration: none;
+            }
+        }
+
+        &-codewars {
+
+            @include respond(phoneSmall){
+                display: none;
             }
         }
         

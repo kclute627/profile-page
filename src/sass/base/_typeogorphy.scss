@@ -6,6 +6,15 @@
       backface-visibility: hidden;
       
       margin-bottom: 6rem;
+
+      @include respond(tab-port){
+        padding: 0;
+        }
+
+      @include respond(phoneSmall){
+        margin-bottom: 3rem;
+      }
+
   
       &--main{
           display: inline-block;
@@ -14,6 +23,21 @@
           letter-spacing: 1rem;
           margin-right: 3rem;
           animation: moveInLeft 3s ease-out;
+   
+          
+         
+         
+          @include respond(tab-port){
+            font-size: 3rem;
+          }
+
+          @include respond(phoneSmall){
+            font-size: 3rem;
+            letter-spacing: .5rem;
+            margin-right: 1.8rem;
+        
+          }
+
   
       }
 
@@ -23,6 +47,14 @@
       font-weight: 700;
       letter-spacing: 1rem;
       animation: moveInRight 3s ease-out;
+      
+      @include respond(tab-port){
+        font-size: 3rem;
+    }
+    @include respond(phoneSmall){
+      margin-bottom: 2rem;
+      letter-spacing: .75rem;
+    }
   
       }
       &--sub{
@@ -31,6 +63,13 @@
       letter-spacing: .75rem;
       animation: appear 1s ease-out 3s;
       animation-fill-mode: backwards;
+
+      @include respond(tab-port){
+        font-size: 2rem;
+    }
+    
+
+
   
       }
     }
@@ -41,6 +80,16 @@
         font-weight: 400;
         margin-bottom: 5rem;
         color: $color-black;
+
+        @include respond(tab-port){
+          font-size: 3rem;
+      }
+      @include respond (phoneSmall){
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+      
         
         &-2{
           color: $color-white;
@@ -62,6 +111,16 @@
       letter-spacing: 1rem;
      
       animation: appear 3s ease-out;
+
+      @include respond(tab-port){
+        font-size: 3rem;
+    }
+    @include respond(phoneSmall){
+      font-size: 3rem;
+      letter-spacing: .5rem;
+      margin-right: 1.5rem;
+  
+    }
     
     }
     .middle-int:hover{

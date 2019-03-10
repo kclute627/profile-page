@@ -13,5 +13,65 @@
    background-blend-mode: screen;
    cursor: pointer;       
    background-position: center;
+   overflow: hidden;
 
 }
+
+
+// Media Query Manager 
+
+/*
+
+0-600px --- Phone 
+600 - 900px ---- Tablet
+900px - 1200 --- tablet Landscape
+1200 - 1800 --- Desktop Computer (Normal Styles Apply) -- Desktop First Approach
+1800px and greater --- Big Desktop
+
+
+$breakpoint argument choices:
+- phone 
+- tab-port
+- tab-land 
+- big-desktop
+
+ORDER: Base + Typogrophy > general layout + grid > page layout > components
+
+*/
+
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phoneSmall {
+        @media(max-width: 20em){@content};   // 319px 
+    }
+
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em){@content};   // 600px 600/ 16px === 37.5
+    }
+    @if $breakpoint == phone1 {
+        @media(max-width: 39.32em){@content};
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em){@content};
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em){@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media(min-width: 112.5em){@content};
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

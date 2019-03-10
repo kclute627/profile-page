@@ -12,6 +12,13 @@
         transition: all .2s;
         margin-right: 7rem;
 
+        @include respond(phoneSmall){
+            font-size: 1rem;
+            margin-right: .5rem;
+            padding: 1rem 3rem;
+        
+          }
+
     }
     &:hover{
         transform: translateY(-.5rem);

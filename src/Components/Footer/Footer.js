@@ -23,7 +23,7 @@ class Footer extends Component {
                    
                     <div className="footer__icon-block">
                     <h2 className="footer-header ">Get in Touch </h2>
-                            <div>
+                            <div className= "footer-header-icons">
                                 <a href="https://www.facebook.com/kyle.clutter.18?ref=bookmarks" target="_blank" className="footer-icon footer-icon-fb fab fa-facebook"></a>
                                 <a href="https://www.freecodecamp.org/kclute627" target="_blank" className="footer-icon footer-icon-fcc  fab fa-free-code-camp" ></a>
                                 <a href="https://www.linkedin.com/in/kyle-clutter-b844b077/" target="_blank" className="footer-icon footer-icon-link fab fa-linkedin" ></a>

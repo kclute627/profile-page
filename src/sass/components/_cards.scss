@@ -7,6 +7,10 @@
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
+    @include respond(phoneSmall){
+        height: 48rem;
+    }
+
 
     &__picture{
         
@@ -28,6 +32,30 @@
         url(./../assets/MemeGen.jpg);
 
        }
+       &-4{
+        @include picFormat;
+        background-image: 
+        url(./../assets/superSquad.jpg);
+
+       }
+       &-5{
+        @include picFormat;
+        background-image: 
+        url(./../assets/fork.jpg);
+
+       }
+
+       &-6{
+        @include picFormat;
+        background-image: 
+        url(./../assets/calc.jpg);
+       }
+       &-7 {
+        @include picFormat;
+        background-image: 
+        url(./../assets/omni.jpg);
+       }
+       
     }
 
 
@@ -60,6 +88,9 @@
     &__footer{
         text-align: center;
         margin: 0;
+        @include respond (phoneSmall){
+            display: none;
+          }
        &-text {
             margin-top: 2rem;
             border-bottom: 1px solid $color-black;
