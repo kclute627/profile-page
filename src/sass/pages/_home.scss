@@ -2,6 +2,19 @@
     background-color: $color-gray-light-1;
     padding: 14rem 0 15rem 0;
     margin-top: -9rem;
+
+
+    @include respond (ipad){
+        padding: 10rem 0 15rem 0;
+      }
+
+    @include respond (phone){
+        padding: 10rem 0 15rem 0;
+    }
+
+    @include respond(phoneMedP){
+        padding: 10rem 0 11rem 0;
+    }
     
 }
 
@@ -14,7 +27,9 @@
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     margin-top: -18rem;
 
-
+    @include respond (tab-port) {
+        padding: 15rem 0 10rem 0;
+    }
     @include respond (phoneSmall){
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
         margin-top: -10rem;

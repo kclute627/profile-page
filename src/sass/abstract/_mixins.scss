@@ -44,6 +44,15 @@ ORDER: Base + Typogrophy > general layout + grid > page layout > components
     @if $breakpoint == phoneSmall {
         @media(max-width: 20em){@content};   // 319px 
     }
+    @if $breakpoint == phoneMed {
+        @media(max-width: 22.5em){@content};   // 360px 
+    }
+    @if $breakpoint == phoneMedP {
+        @media(max-width: 23.5em){@content};   // 375px 
+    }
+    @if $breakpoint == phoneLg {
+        @media(max-width: 31.625em){@content};
+    }
 
     @if $breakpoint == phone {
         @media(max-width: 37.5em){@content};   // 600px 600/ 16px === 37.5
@@ -51,7 +60,10 @@ ORDER: Base + Typogrophy > general layout + grid > page layout > components
     @if $breakpoint == phone1 {
         @media(max-width: 39.32em){@content};
     }
-    @if $breakpoint == tab-port {
+    @if $breakpoint == ipad {
+        @media(max-width: 48.0625em){@content};
+    }
+    @if $breakpoint == tab-port {               // 900 px 
         @media(max-width: 56.25em){@content};
     }
     @if $breakpoint == tab-land {

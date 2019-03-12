@@ -7,7 +7,33 @@
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-    @include respond(phoneSmall){
+    
+
+    &:last-child{
+        @include respond(phone){
+           margin-bottom: 4rem;
+        }
+
+
+    }
+
+    &:not(:last-child){
+        @include respond (ipad){
+            margin-bottom: 1rem;
+        }
+    }
+
+    @include respond (tab-land){
+        height: 58rem;
+        margin-bottom: 6rem;
+    }
+    
+
+    @include respond(phone){
+        height: 50rem;
+    }
+
+    @include respond(phoneMedP){
         height: 48rem;
     }
 
@@ -88,7 +114,7 @@
     &__footer{
         text-align: center;
         margin: 0;
-        @include respond (phoneSmall){
+        @include respond (phoneMedP){
             display: none;
           }
        &-text {

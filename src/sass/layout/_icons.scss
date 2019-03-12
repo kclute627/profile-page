@@ -6,7 +6,25 @@
         font-size: 6rem;
         top: 40%;
         left: 93%;
-        @include respond (phoneSmall){
+
+        @include respond (tab-land){
+            top: 100%;
+            left: 55%;
+        }
+
+       @include respond (tab-port){
+           top: 40%;
+           left: 88%;
+       }
+
+       @include respond (phone){
+        top: 100%;
+        left: 50%;
+        font-size: 5rem;
+
+    }
+
+        @include respond (phoneMedP){
             top: 100%;
             left: 50%;
             font-size: 4rem;
@@ -25,10 +43,34 @@
         top: 40%;
         right: 93%;
 
-        @include respond (phoneSmall){
+        @include respond (tab-land){
+            top: 100%;
+            left: 40%;
+        }
+
+        @include respond (tab-port){
+            top: 40%;
+            right: 88%;
+        }
+
+        @include respond (ipad){
+            top: 40%;
+            left: 4%;
+          }
+
+        @include respond (phone){
+            top: 100%;
+            left: 40%;
+            font-size: 5rem;
+            
+
+        }
+
+        @include respond (phoneMedP){
             top: 100%;
             left: 35%;
             font-size: 4rem;
+            
             
           }
 

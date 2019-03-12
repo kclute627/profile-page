@@ -10,6 +10,7 @@
             margin-bottom: $gutter-vertical-small;
                 
         }
+        
     }
 
     @include respond(tab-port){
@@ -30,6 +31,16 @@
                 margin-bottom: $gutter-vertical-small;
 
             }
+            @include respond (ipad){
+                margin-bottom: 1rem;
+            }
+
+            @include respond (phone){
+                margin-bottom: 3rem;
+            }
+            @include respond(phoneMedP){
+                margin-bottom: 2rem;
+             }
         }
 
         @include respond(tab-port){

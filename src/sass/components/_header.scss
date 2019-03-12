@@ -10,12 +10,48 @@
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     position: relative;
 
+    @include respond(tab-land){
+      
+      
+    }
+
     &__text-box{
         position: absolute;
         top: 45%;
         left: 50%;
         text-align: center;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        
+        
+        
+        @include respond(tab-land){
+          top: 50%
+        }
+        
+
+        @include respond(tab-port){
+          
+        }
+
+        @media(max-width: 64em){
+          top: 37%;
+        }
+
+        @include respond (ipad){
+          top: 37%;
+        }
+
+        @include respond (phone){
+         top: 37%;
+        }
+
+        @include respond(phoneMedP){
+          top: 37%;
+
+        }
+        
+
+        
     }
   }
   

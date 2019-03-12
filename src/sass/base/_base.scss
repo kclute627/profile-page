@@ -22,7 +22,10 @@ body{
   box-sizing: border-box;
   background-color: #fff;
 
-  @include respond(tab-port){
+
+
+  @include respond(tab-land){
     padding: 0;
   }
+  
 }

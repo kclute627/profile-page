@@ -55,9 +55,13 @@
         z-index: 100;
         display: inline-block;
 
+        @include respond (tab-land){
+            left: 30%;
+        }
+
         @include respond(tab-port){
-            top:10%;
-            left: 25%;
+            top: 10%;
+            left: 22%;
         }
         @include respond(phone1){
             left: 10%;
@@ -88,12 +92,15 @@
         cursor: pointer;
         &:not(:last-child){
             margin-right: 3rem;
+            @include respond(phoneMed){
+                margin-right: 2rem;
+             }
             @include respond(phoneSmall){
                margin-right: 2rem;
             }
         }
 
-        @include respond(phoneSmall){
+        @include respond(phone){
             font-size: 3.5rem;
             margin-top: 2.25rem;
         }
@@ -147,7 +154,11 @@
 
         &-codewars {
 
-            @include respond(phoneSmall){
+            @include respond (ipad){
+               
+            }
+
+            @include respond(phoneLg){
                 display: none;
             }
         }

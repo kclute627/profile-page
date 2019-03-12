@@ -7,13 +7,32 @@
       
       margin-bottom: 6rem;
 
+      @include respond(tab-land){
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 5rem;
+        }
+      
+
       @include respond(tab-port){
         padding: 0;
+        margin-bottom: 5rem;
+        margin-top: 12rem;
         }
 
-      @include respond(phoneSmall){
-        margin-bottom: 3rem;
-      }
+      @include respond (phoneMedP){
+          margin-top: 0;
+          margin-bottom: 2rem;
+          
+        }
+
+        @include respond(phoneMed){
+          margin-bottom: 0;
+        }
+     
+
+      
+      
 
   
       &--main{
@@ -24,11 +43,28 @@
           margin-right: 3rem;
           animation: moveInLeft 3s ease-out;
    
-          
+          @include respond(tab-land){
+            font-size: 5rem;
+            letter-spacing: .5rem;
+            margin-right: 2rem;
+            }
          
          
           @include respond(tab-port){
-            font-size: 3rem;
+            font-size: 5rem;
+            letter-spacing: .75rem;
+            margin-right: 2rem;
+          }
+
+          @include respond (ipad){
+            letter-spacing: .5rem;
+          }
+
+          @include respond(phoneMedP){
+            font-size: 4rem;
+            letter-spacing: .5rem;
+            margin-right: 1.8rem;
+        
           }
 
           @include respond(phoneSmall){
@@ -47,11 +83,24 @@
       font-weight: 700;
       letter-spacing: 1rem;
       animation: moveInRight 3s ease-out;
+
       
-      @include respond(tab-port){
-        font-size: 3rem;
+        @include respond(tab-land){
+          font-size: 5rem;
+          letter-spacing: .5rem;
+        }
+      
+    @include respond(tab-port){
+        font-size: 5rem;
+    }
+    @include respond(phoneMedP){
+      font-size: 4rem;
+      letter-spacing: .5rem;
+      
+  
     }
     @include respond(phoneSmall){
+      font-size: 3rem;
       margin-bottom: 2rem;
       letter-spacing: .75rem;
     }
@@ -83,10 +132,19 @@
 
         @include respond(tab-port){
           font-size: 3rem;
+          margin: 0;
       }
+
+      @include respond(phoneMedP){
+        margin: 0;
+        
+    
+      }
+
+
       @include respond (phoneSmall){
         font-size: 3rem;
-        margin-top: 1rem;
+        margin-top: 0;
         margin-bottom: 0;
       }
       
@@ -112,15 +170,26 @@
      
       animation: appear 3s ease-out;
 
+      @include respond(tab-land){
+        font-size: 5rem;
+        margin-right: 2rem;
+        }
+
       @include respond(tab-port){
+        font-size: 5rem;
+        margin-right: 2rem;
+        }
+
+        @include respond(phoneMedP){
+          font-size: 4rem;
+    
+        }
+          @include respond(phoneSmall){
         font-size: 3rem;
-    }
-    @include respond(phoneSmall){
-      font-size: 3rem;
-      letter-spacing: .5rem;
-      margin-right: 1.5rem;
-  
-    }
+        letter-spacing: .5rem;
+        margin-right: 1.5rem;
+    
+        }
     
     }
     .middle-int:hover{

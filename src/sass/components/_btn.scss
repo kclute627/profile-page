@@ -12,6 +12,43 @@
         transition: all .2s;
         margin-right: 7rem;
 
+        @include respond (tab-land){
+            margin-right: 3rem;
+            margin-top: 5rem;
+        }
+
+        @include respond (tab-port){
+            font-size: 1.3rem;
+            margin-right: 5rem;
+            padding: 1rem 3.5rem;
+        }
+
+        @include respond (ipad){
+            margin-right: 1rem;
+          }
+
+        @include respond (phone){
+            margin-right: 1rem;
+            margin-top: 3rem;
+        }
+        
+
+        @include respond(phoneMedP){
+        
+            font-size: .9rem;
+            padding: .75rem 3.5rem;
+            margin-right: 2rem;
+            margin-top: 2rem;
+    
+        }
+
+        @include respond(phoneMed){
+            font-size: 1rem;
+            margin-right: .5rem;
+            padding: 1rem 3rem;
+        
+          }
+
         @include respond(phoneSmall){
             font-size: 1rem;
             margin-right: .5rem;
