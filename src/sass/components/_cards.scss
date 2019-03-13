@@ -33,6 +33,12 @@
         height: 50rem;
     }
 
+    @media(max-width: 25.3125em){
+        height: 45rem;
+        margin-bottom: 0;
+
+    }
+
     @include respond(phoneMedP){
         height: 48rem;
     }
@@ -114,6 +120,13 @@
     &__footer{
         text-align: center;
         margin: 0;
+
+        @media(max-width: 25.3125em){
+            display: none;
+
+        }
+
+
         @include respond (phoneMedP){
             display: none;
           }

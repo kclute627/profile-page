@@ -66,9 +66,15 @@
 
         }
 
-        @include respond (phoneMedP){
+        @media(max-width: 35.125em){
             top: 100%;
             left: 35%;
+            font-size: 5rem;
+
+        }
+
+        @include respond (phoneMedP){
+           
             font-size: 4rem;
             
             
