@@ -87,6 +87,11 @@
         background-image: 
         url(./../assets/omni.jpg);
        }
+       &-8{
+        @include picFormat;
+        background-image: 
+        url(./../assets/8.png);
+       }
        
     }
 

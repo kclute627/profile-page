@@ -29,15 +29,15 @@ class MyProjects extends Component {
             },
             {
                 index: 2,
-                name: "HTML Website",
-                description: "I coded along side a Udemy course taught by Jonas Schmedtmann focusing on HTML and CSS",
-                lagUsed: 'HTML and CSS. Hosted by Firebase',
+                name: "Budget App",
+                description: "I coded a fully functional budget app",
+                lagUsed: 'React, SASS. Hosted by Firebase',
                 
-                link: "https://omni-food-a17cc.firebaseapp.com/",
-                className: "card__picture-7",
-                lang1: "false",
+                link: "https://budget-302a9.web.app/",
+                className: "card__picture-8",
+                lang1: "true",
                 lang2: "true",
-                lang3: "false",
+                lang3: "true",
             },
             {
                 index: 3,
@@ -91,16 +91,15 @@ class MyProjects extends Component {
             },
             {
                 index: 7,
-            
-                name: "Basic Calculator",
-                description: "I created a bacic calculator app as one of the requirments for Free Code Camp ",
-                lagUsed: 'Javascript  Hosted by Firebase',
-                img: '../../assets/MemeGen.jpg',
-                link: "https://calc-7af0c.firebaseapp.com/",
-                className: "card__picture-6",
-                lang1: "true",
+                name: "HTML Website",
+                description: "I coded along side a Udemy course taught by Jonas Schmedtmann focusing on HTML and CSS",
+                lagUsed: 'HTML and CSS. Hosted by Firebase',
+                
+                link: "https://omni-food-a17cc.firebaseapp.com/",
+                className: "card__picture-7",
+                lang1: "false",
                 lang2: "true",
-                lang3: "true",
+                lang3: "false",
             },
             {
                 index: 8,
