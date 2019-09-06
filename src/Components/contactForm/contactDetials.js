@@ -2,7 +2,7 @@ import React from "react";
 
 const contactDetials = props => {
   return (
-    <form className="form">
+    <form className="form" name="form" >
       <div className="u-margin-bottom-medium">
         <h3 className="heading-secondary">Let's Work Together</h3>
       </div>
