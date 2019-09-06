@@ -13,6 +13,8 @@ const encode = (data) => {
         .join("&");
   }
 
+  //update
+
 class ContactForm extends Component {
   state = {
     name: "",
