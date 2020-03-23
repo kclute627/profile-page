@@ -17,7 +17,7 @@ class MyProjects extends Component {
         projects: [ 
             {
                 index: 1,
-                name: "Small Business Websites Inc",
+                name: "Small Business Websites",
                 description: "I built and manage a web development company focused on building websites for small businesses",
                 lagUsed: 'Javascript: with React and Redux',
                 img: '../../assets/sb-websites.jpg',
@@ -29,7 +29,7 @@ class MyProjects extends Component {
             },
             {
                 index: 2,
-                name: "Budget App",
+                name: "Apartment FInder",
                 description: "I coded a fully functional website to search for investment properties in Chicago, IL",
                 lagUsed: 'React, SASS. Hosted by Netlify',
                 img: '../../assets/aptBuildings.jpg',                
