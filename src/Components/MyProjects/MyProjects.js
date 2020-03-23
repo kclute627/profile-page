@@ -17,11 +17,11 @@ class MyProjects extends Component {
         projects: [ 
             {
                 index: 1,
-                name: "Burger Builder App",
-                description: "Improved my Javascript, React and Redux skills following along to an indepth 30+ hour udemy Course",
-                lagUsed: 'Javascript: with React and Redux Firebase',
-                img: '../../assets/BurgBuilder.jpg',
-                link: "https://react-my-burger-d3658.firebaseapp.com/",
+                name: "Small Business Websites Inc",
+                description: "I built and manage a web development company focused on building websites for small businesses",
+                lagUsed: 'Javascript: with React and Redux',
+                img: '../../assets/sb-websites.jpg',
+                link: "https://sb-websites.com",
                 className: "card__picture-1",
                 lang1: "true",
                 lang2: "true",
@@ -30,10 +30,10 @@ class MyProjects extends Component {
             {
                 index: 2,
                 name: "Budget App",
-                description: "I coded a fully functional budget app",
-                lagUsed: 'React, SASS. Hosted by Firebase',
-                
-                link: "https://budget-302a9.web.app/",
+                description: "I coded a fully functional website to search for investment properties in Chicago, IL",
+                lagUsed: 'React, SASS. Hosted by Netlify',
+                img: '../../assets/aptBuildings.jpg',                
+                link: "https://vigilant-rosalind-3235c3.netlify.com/",
                 className: "card__picture-8",
                 lang1: "true",
                 lang2: "true",
