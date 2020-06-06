@@ -21,7 +21,7 @@ class MainPage extends Component {
                     <span className='heading-primary--main2'>
                          Clutter
                     </span> 
-                        <span className='heading-primary--sub'>Front-end Web Developer</span>
+                        <span className='heading-primary--sub'>Full Stack Web Developer</span>
 
                     </h1>
                     <a href='#projects' className='btn btn-white btn-animated'> See My Projects </a>

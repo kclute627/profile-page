@@ -92,6 +92,16 @@
         background-image: 
         url(./../assets/aptBuildings.jpg);
        }
+       &-9{
+        @include picFormat;
+        background-image: 
+        url(./../assets/BurgBuilder.jpg);
+       }
+       &-10{
+        @include picFormat;
+        background-image: 
+        url(./../assets/food.jpg);
+       }
        
     }
 

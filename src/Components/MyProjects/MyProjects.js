@@ -16,6 +16,18 @@ class MyProjects extends Component {
         leftArrow: false, // changed from False 
         projects: [ 
             {
+                index: 10,
+                name: "Food Finder",
+                description: "I Built a Full-Stack Application using Node JS. The user can search, add and review diffrent eaterys across the world",
+                lagUsed: 'NODE JS',
+                img: '../../assets/food.jpg',
+                link: "https://food-finder-now.herokuapp.com/",
+                className: "card__picture-10",
+                lang1: "false",
+                lang2: "true",
+                lang3: "true"
+            },
+            {
                 index: 1,
                 name: "Small Business Websites",
                 description: "I built and manage a web development company focused on building websites for small businesses",
@@ -29,7 +41,7 @@ class MyProjects extends Component {
             },
             {
                 index: 2,
-                name: "Apartment FInder",
+                name: "Apartment Finder",
                 description: "I coded a fully functional website to search for investment properties in Chicago, IL",
                 lagUsed: 'React, SASS. Hosted by Netlify',
                 img: '../../assets/aptBuildings.jpg',                
@@ -101,19 +113,7 @@ class MyProjects extends Component {
                 lang2: "true",
                 lang3: "false",
             },
-            {
-                index: 8,
             
-                name: "Meme Generator",
-                description: "I created an app that builds Memes using React and Redux. I pulled memes from an API and displayed them",
-                lagUsed: 'Javascript: with React and Redux. Hosted by Firebase',
-                img: '../../assets/MemeGen.jpg',
-                link: "https://memegen-2fe54.firebaseapp.com/",
-                className: "card__picture-3",
-                lang1: "true",
-                lang2: "true",
-                lang3: "true",
-            },
             {
                 index: 9,
                 name: "Burger Builder App",
@@ -121,35 +121,13 @@ class MyProjects extends Component {
                 lagUsed: 'Javascript: with React and Redux Firebase',
                 img: '../../assets/BurgBuilder.jpg',
                 link: "https://react-my-burger-d3658.firebaseapp.com/",
-                className: "card__picture-1",
+                className: "card__picture-9",
                 lang1: "true",
                 lang2: "true",
                 lang3: "true"
             },
-            {
-                index: 10,
-                name: "GitHub Battle",
-                description: "I coded along side a course tought by Tyler Mcggins github Battle was the final project built with React",
-                lagUsed: 'Javascript: with React and Redux. Hosted by Firebase',
-                img: '../../assets/gitHubBattle.jpg',
-                link: "https://github-battle-f6281.firebaseapp.com/",
-                className: "card__picture-2",
-                lang1: "true",
-                lang2: "true",
-                lang3: "true",
-            },
-            {
-                index: 11,
-                name: "Recipie Finder",
-                description: "I coded along side a Udemy course using React along with the axios package to pull recpies from an api ",
-                lagUsed: 'Javascript: with React. Hosted by Firebase',
-                img: '../../assets/MemeGen.jpg',
-                link: "https://forkify-fe340.firebaseapp.com/#35477",
-                className: "card__picture-5",
-                lang1: "true",
-                lang2: "true",
-                lang3: "true",
-            },
+            
+            
             
             
         ],
